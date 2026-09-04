@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "store_id": "io.github.isanto1306.dario-apps",
+  "store_id": "io.github.isanto1306.apps",
   "name": {
-    "en_US": "Dario Apps",
-    "de_DE": "Dario Apps"
+    "en_US": "iSanto 1306 Apps",
+    "de_DE": "iSanto 1306 Apps"
   },
   "description": {
     "en_US": "Self-hosted apps for ZimaOS maintained and tested by isanto1306.",
     "de_DE": "Selbst gehostete Apps für ZimaOS, gepflegt und getestet von isanto1306."
   },
-  "maintainer": "Dario",
+  "maintainer": "isanto1306",
   "url": "https://github.com/isanto1306/zima-appstore"
 }
