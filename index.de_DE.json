@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "id": "io.github.isanto1306.disk-monitor",
+      "title": "Disk Monitor",
+      "tagline": "Speicher-, SMART- und Festplattenaktivitätsüberwachung für ZimaOS/Linux"
+    }
+  ]
+}

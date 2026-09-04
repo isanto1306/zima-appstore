@@ -1,0 +1,58 @@
+name: disk-monitor
+
+services:
+  disk-monitor:
+    container_name: disk-monitor
+    hostname: disk-monitor
+    image: ghcr.io/isanto1306/disk-monitor:latest@sha256:93b5619e7b6c5cd69ffc5c62558d96530a12b4fcc2fc2ed1b97f12d8830855a8
+    restart: unless-stopped
+    init: true
+
+    network_mode: host
+    privileged: true
+
+    environment:
+      DISK_MONITOR_USERNAME: "CHANGE_ME_USERNAME"
+      DISK_MONITOR_PASSWORD: "CHANGE_ME_PASSWORD_AT_LEAST_12_CHARS"
+      DISK_MONITOR_SESSION_SECRET: "CHANGE_ME_SESSION_SECRET_AT_LEAST_32_CHARS"
+      DISK_MONITOR_SESSION_HTTPS_ONLY: "false"
+
+    volumes:
+      - type: bind
+        source: /sys
+        target: /host/sys
+        read_only: true
+      - type: bind
+        source: /proc
+        target: /host/proc
+        read_only: true
+      - type: bind
+        source: /dev
+        target: /dev
+      - type: bind
+        source: /DATA/AppData/disk-monitor/cache
+        target: /app/cache
+
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    stop_grace_period: 15s
+
+x-casaos:
+  id: io.github.isanto1306.disk-monitor
+  main: disk-monitor
+  index: /
+  port_map: "8999"
+  scheme: http
+  icon: https://isanto1306.github.io/zima-appstore/apps/io.github.isanto1306.disk-monitor/assets/icon.png
+  title:
+    en_US: Disk Monitor
+    de_DE: Disk Monitor
+  version: "0.32.77"

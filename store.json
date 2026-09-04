@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "store_id": "io.github.isanto1306.dario-apps",
+  "name": "Dario Apps",
+  "description": "Self-hosted apps for ZimaOS maintained and tested by isanto1306.",
+  "maintainer": "Dario",
+  "url": "https://github.com/isanto1306/zima-appstore"
+}

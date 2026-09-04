@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "updated_at": "2026-09-04T06:19:51Z",
+  "app_count": 1,
+  "base_url": "https://isanto1306.github.io/zima-appstore",
+  "apps": [
+    {
+      "id": "io.github.isanto1306.disk-monitor",
+      "title": "Disk Monitor",
+      "tagline": "Storage, SMART and disk activity monitoring for ZimaOS/Linux",
+      "category": "Others",
+      "categories": [
+        "others"
+      ],
+      "author": "isanto1306",
+      "developer": "isanto1306",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/io.github.isanto1306.disk-monitor/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/io.github.isanto1306.disk-monitor/docker-compose.yml",
+      "meta_url": "/apps/io.github.isanto1306.disk-monitor/meta.json",
+      "content_hash": "ef601895",
+      "version": "0.32.77"
+    }
+  ]
+}

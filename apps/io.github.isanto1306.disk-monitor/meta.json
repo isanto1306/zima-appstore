@@ -1,0 +1,25 @@
+{
+  "tagline": "Storage, SMART and disk activity monitoring for ZimaOS/Linux",
+  "description": "Self-hosted disk monitoring dashboard with SMART health, temperature, standby state, activity and RAID information.",
+  "author": "isanto1306",
+  "developer": "isanto1306",
+  "category": "Others",
+  "architectures": [
+    "amd64"
+  ],
+  "update_at": "2026-09-03",
+  "repo": "https://github.com/isanto1306/Disk-Monitor",
+  "support": "https://github.com/isanto1306/Disk-Monitor/issues",
+  "docs": "https://github.com/isanto1306/Disk-Monitor#readme",
+  "title": "Disk Monitor",
+  "base_url": "https://isanto1306.github.io/zima-appstore",
+  "id": "io.github.isanto1306.disk-monitor",
+  "version": "0.32.77",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 33008447
+  }
+}
