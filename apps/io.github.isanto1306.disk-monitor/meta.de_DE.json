@@ -1,6 +1,9 @@
 {
   "id": "io.github.isanto1306.disk-monitor",
   "title": "Disk Monitor",
+  "description": "Selbst gehostetes Festplatten-Dashboard mit SMART-Zustand, Temperatur,\nStandby-Status, Aktivität und RAID-Informationen.\n\n**Vor der Installation:** Über **Benutzerdefinierte Installation → Erweitert**\nalle Sicherheits-Platzhalter vor dem ersten Start ändern. Einen eigenen\n`DISK_MONITOR_USERNAME` festlegen, ein `DISK_MONITOR_PASSWORD` mit mindestens\n12 Zeichen wählen und einen eindeutigen `DISK_MONITOR_SESSION_SECRET` mit\nmindestens 32 Zeichen erzeugen. Die App nicht mit unveränderten\n`CHANGE_ME_...`-Werten installieren.\n\n`DISK_MONITOR_SESSION_HTTPS_ONLY` für normalen lokalen HTTP-Zugriff auf\n`false` lassen. Nur auf `true` setzen, wenn Disk Monitor ausschließlich\nüber HTTPS erreichbar ist.\n",
   "tagline": "Speicher-, SMART- und Festplattenaktivitätsüberwachung für ZimaOS/Linux",
-  "description": "Selbst gehostetes Festplatten-Dashboard mit SMART-Zustand, Temperatur, Standby-Status, Aktivität und RAID-Informationen."
+  "tips": {
+    "before_install": "Vor dem ersten Start die benutzerdefinierte Installation → Erweitert verwenden. Benutzername ändern, ein Passwort mit mindestens 12 Zeichen setzen und ein eindeutiges Session-Geheimnis mit mindestens 32 Zeichen erzeugen. Keine CHANGE_ME_...-Platzhalter unverändert lassen."
+  }
 }

@@ -1,6 +1,9 @@
 {
   "tagline": "Storage, SMART and disk activity monitoring for ZimaOS/Linux",
-  "description": "Self-hosted disk monitoring dashboard with SMART health, temperature, standby state, activity and RAID information.",
+  "description": "Self-hosted disk monitoring dashboard with SMART health, temperature,\nstandby state, activity and RAID information.\n\n**Before installation:** Use **Custom install → Advanced (show more)** and\nreplace all security placeholders before starting Disk Monitor for the\nfirst time. Set your own `DISK_MONITOR_USERNAME`, choose a\n`DISK_MONITOR_PASSWORD` with at least 12 characters, and generate a unique\n`DISK_MONITOR_SESSION_SECRET` with at least 32 characters. Do not install\nthe app with the `CHANGE_ME_...` values unchanged.\n\nLeave `DISK_MONITOR_SESSION_HTTPS_ONLY` set to `false` for normal local\nHTTP access. Set it to `true` only when Disk Monitor is served exclusively\nover HTTPS.\n",
+  "tips": {
+    "before_install": "Use Custom install → Advanced (show more) before the first start. Change DISK_MONITOR_USERNAME, set a password with at least 12 characters, and generate a unique session secret with at least 32 characters. Do not leave any CHANGE_ME_... placeholder unchanged."
+  },
   "author": "isanto1306",
   "developer": "isanto1306",
   "category": "Others",
