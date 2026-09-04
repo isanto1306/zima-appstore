@@ -87,8 +87,46 @@ x-casaos:
     en_US: Storage, SMART and disk activity monitoring for ZimaOS/Linux
     de_DE: Speicher-, SMART- und Festplattenaktivitätsüberwachung für ZimaOS/Linux
   description:
-    en_US: Self-hosted disk monitoring dashboard with SMART health, temperature, standby state, activity and RAID information.
-    de_DE: Selbst gehostetes Festplatten-Dashboard mit SMART-Zustand, Temperatur, Standby-Status, Aktivität und RAID-Informationen.
+    en_US: |
+      Self-hosted disk monitoring dashboard with SMART health, temperature,
+      standby state, activity and RAID information.
+
+      **Before installation:** Use **Custom install → Advanced (show more)** and
+      replace all security placeholders before starting Disk Monitor for the
+      first time. Set your own `DISK_MONITOR_USERNAME`, choose a
+      `DISK_MONITOR_PASSWORD` with at least 12 characters, and generate a unique
+      `DISK_MONITOR_SESSION_SECRET` with at least 32 characters. Do not install
+      the app with the `CHANGE_ME_...` values unchanged.
+
+      Leave `DISK_MONITOR_SESSION_HTTPS_ONLY` set to `false` for normal local
+      HTTP access. Set it to `true` only when Disk Monitor is served exclusively
+      over HTTPS.
+    de_DE: |
+      Selbst gehostetes Festplatten-Dashboard mit SMART-Zustand, Temperatur,
+      Standby-Status, Aktivität und RAID-Informationen.
+
+      **Vor der Installation:** Über **Benutzerdefinierte Installation → Erweitert**
+      alle Sicherheits-Platzhalter vor dem ersten Start ändern. Einen eigenen
+      `DISK_MONITOR_USERNAME` festlegen, ein `DISK_MONITOR_PASSWORD` mit mindestens
+      12 Zeichen wählen und einen eindeutigen `DISK_MONITOR_SESSION_SECRET` mit
+      mindestens 32 Zeichen erzeugen. Die App nicht mit unveränderten
+      `CHANGE_ME_...`-Werten installieren.
+
+      `DISK_MONITOR_SESSION_HTTPS_ONLY` für normalen lokalen HTTP-Zugriff auf
+      `false` lassen. Nur auf `true` setzen, wenn Disk Monitor ausschließlich
+      über HTTPS erreichbar ist.
+  tips:
+    before_install:
+      en_US: >-
+        Use Custom install → Advanced (show more) before the first start. Change
+        DISK_MONITOR_USERNAME, set a password with at least 12 characters, and
+        generate a unique session secret with at least 32 characters. Do not
+        leave any CHANGE_ME_... placeholder unchanged.
+      de_DE: >-
+        Vor dem ersten Start die benutzerdefinierte Installation → Erweitert
+        verwenden. Benutzername ändern, ein Passwort mit mindestens 12 Zeichen
+        setzen und ein eindeutiges Session-Geheimnis mit mindestens 32 Zeichen
+        erzeugen. Keine CHANGE_ME_...-Platzhalter unverändert lassen.
   author: isanto1306
   developer: isanto1306
   category: Others
