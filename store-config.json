@@ -2,8 +2,8 @@
   "version": 2,
   "store_id": "io.github.isanto1306.apps",
   "name": {
-    "en_US": "iSanto 1306 Apps",
-    "de_DE": "iSanto 1306 Apps"
+    "en_US": "iSanto1306 Apps",
+    "de_DE": "iSanto1306 Apps"
   },
   "description": {
     "en_US": "Self-hosted apps for ZimaOS maintained and tested by isanto1306.",
