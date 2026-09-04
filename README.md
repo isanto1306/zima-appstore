@@ -1,4 +1,4 @@
-# Dario Apps — third-party app store for ZimaOS
+# iSanto 1306 Apps — third-party app store for ZimaOS
 
 A third-party ZimaOS v2 app store for apps maintained by `isanto1306`.
 
