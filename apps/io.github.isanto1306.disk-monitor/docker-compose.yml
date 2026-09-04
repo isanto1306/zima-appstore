@@ -8,6 +8,11 @@ services:
     restart: unless-stopped
     init: true
 
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+
     network_mode: host
     privileged: true
 
