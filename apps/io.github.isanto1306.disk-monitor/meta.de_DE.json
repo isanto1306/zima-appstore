@@ -1,6 +1,6 @@
 {
   "id": "io.github.isanto1306.disk-monitor",
   "title": "Disk Monitor",
-  "tagline": "Speicher-, SMART- und Festplattenaktivitätsüberwachung für ZimaOS/Linux",
-  "description": "Selbst gehostetes Festplatten-Dashboard mit SMART-Zustand, Temperatur, Standby-Status, Aktivität und RAID-Informationen."
+  "description": "Selbst gehostetes Festplatten-Dashboard mit SMART-Zustand, Temperatur, Standby-Status, Aktivität und RAID-Informationen.",
+  "tagline": "Speicher-, SMART- und Festplattenaktivitätsüberwachung für ZimaOS/Linux"
 }
