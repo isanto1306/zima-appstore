@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-09-12T08:29:32Z",
+  "updated_at": "2026-09-12T09:23:18Z",
   "app_count": 1,
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "apps": [
@@ -21,8 +21,8 @@
       "thumbnail": "",
       "compose_url": "/apps/io.github.isanto1306.disk-monitor/docker-compose.yml",
       "meta_url": "/apps/io.github.isanto1306.disk-monitor/meta.json",
-      "content_hash": "bf4e82ea",
-      "version": "0.32.78"
+      "content_hash": "0157ac62",
+      "version": "0.32.79"
     }
   ]
 }
