@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updated_at": "2026-09-14T10:22:04Z",
-  "app_count": 1,
+  "updated_at": "2026-09-14T11:25:23Z",
+  "app_count": 2,
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "apps": [
     {
@@ -21,8 +21,28 @@
       "thumbnail": "",
       "compose_url": "/apps/io.github.isanto1306.disk-monitor/docker-compose.yml",
       "meta_url": "/apps/io.github.isanto1306.disk-monitor/meta.json",
-      "content_hash": "4955503a",
+      "content_hash": "26a5f3a8",
       "version": "0.32.83"
+    },
+    {
+      "id": "io.github.isanto1306.update-monitor",
+      "title": "Update Monitor",
+      "tagline": "Docker update monitoring, policies, backups and restore for ZimaOS",
+      "category": "Others",
+      "categories": [
+        "others"
+      ],
+      "author": "isanto1306",
+      "developer": "isanto1306",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/io.github.isanto1306.update-monitor/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/io.github.isanto1306.update-monitor/docker-compose.yml",
+      "meta_url": "/apps/io.github.isanto1306.update-monitor/meta.json",
+      "content_hash": "a1cde457",
+      "version": "0.3.316"
     }
   ]
 }
