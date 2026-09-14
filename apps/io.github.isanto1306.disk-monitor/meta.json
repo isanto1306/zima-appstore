@@ -17,12 +17,12 @@
   "title": "Disk Monitor",
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "id": "io.github.isanto1306.disk-monitor",
-  "version": "0.32.83",
+  "version": "0.32.84",
   "categories": [
     "others"
   ],
   "min_memory": 268435456,
   "min_image_size": {
-    "amd64": 33013191
+    "amd64": 37674381
   }
 }
