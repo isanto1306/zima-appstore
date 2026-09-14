@@ -10,19 +10,19 @@
   "architectures": [
     "amd64"
   ],
-  "update_at": "2026-09-12",
+  "update_at": "2026-09-14",
   "repo": "https://github.com/isanto1306/Disk-Monitor",
   "support": "https://github.com/isanto1306/Disk-Monitor/issues",
   "docs": "https://github.com/isanto1306/Disk-Monitor#readme",
   "title": "Disk Monitor",
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "id": "io.github.isanto1306.disk-monitor",
-  "version": "0.32.79",
+  "version": "0.32.80",
   "categories": [
     "others"
   ],
   "min_memory": 268435456,
   "min_image_size": {
-    "amd64": 33010289
+    "amd64": 33011780
   }
 }
