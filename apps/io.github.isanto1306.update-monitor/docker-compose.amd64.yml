@@ -4,14 +4,14 @@ services:
   update-monitor:
     container_name: update-monitor
     hostname: update-monitor
-    image: ghcr.io/isanto1306/update-monitor:latest@sha256:635ad7dae32fcd657e7f9710da7109aee3ea324cc83077351c23bf408f3e8262
+    image: ghcr.io/isanto1306/update-monitor:latest@sha256:f8a87242a0a3b6b7bfef6428c2841a5217c81a830f04d7fc7708b2af17840839
     restart: unless-stopped
     init: true
 
     deploy:
       resources:
         reservations:
-          memory: 256M
+          memory: 512M
 
     network_mode: host
 

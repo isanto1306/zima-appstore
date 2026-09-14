@@ -21,7 +21,7 @@
   "categories": [
     "others"
   ],
-  "min_memory": 268435456,
+  "min_memory": 536870912,
   "min_image_size": {
     "amd64": 84662925
   }
