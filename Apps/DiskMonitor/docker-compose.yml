@@ -85,6 +85,14 @@ x-casaos:
   port_map: "8999"
   scheme: http
   icon: https://raw.githubusercontent.com/isanto1306/Disk-Monitor/main/static/web-app-icon-512.png
+  thumbnail: screenshot-1-dashboard.webp
+  screenshot_link:
+    - screenshot-1-dashboard.webp
+    - screenshot-2-drive-details.webp
+    - screenshot-3-usb-standby.webp
+    - screenshot-4-smart-check.webp
+    - screenshot-5-smart-details.webp
+    - screenshot-6-smart-history.webp
   title:
     en_US: Disk Monitor
     de_DE: Disk Monitor
@@ -106,6 +114,20 @@ x-casaos:
       Leave `DISK_MONITOR_SESSION_HTTPS_ONLY` set to `false` for normal local
       HTTP access. Set it to `true` only when Disk Monitor is served exclusively
       over HTTPS.
+
+      **Screenshots**
+
+      ![Disk Monitor dashboard](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-1-dashboard.webp)
+
+      ![Drive details](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-2-drive-details.webp)
+
+      ![USB standby drive details](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-3-usb-standby.webp)
+
+      ![SMART Check](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-4-smart-check.webp)
+
+      ![Advanced SMART data](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-5-smart-details.webp)
+
+      ![SMART history](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-6-smart-history.webp)
     de_DE: |
       Selbst gehostetes Festplatten-Dashboard mit SMART-Zustand, Temperatur,
       Standby-Status, Aktivität und RAID-Informationen.
@@ -120,6 +142,20 @@ x-casaos:
       `DISK_MONITOR_SESSION_HTTPS_ONLY` für normalen lokalen HTTP-Zugriff auf
       `false` lassen. Nur auf `true` setzen, wenn Disk Monitor ausschließlich
       über HTTPS erreichbar ist.
+
+      **Screenshots**
+
+      ![Disk Monitor Hauptansicht](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-1-dashboard.webp)
+
+      ![Laufwerksdetails](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-2-drive-details.webp)
+
+      ![USB Standby Laufwerksdetails](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-3-usb-standby.webp)
+
+      ![SMART Check](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-4-smart-check.webp)
+
+      ![Erweiterte SMART Daten](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-5-smart-details.webp)
+
+      ![SMART Verlauf](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-6-smart-history.webp)
   tips:
     before_install:
       en_US: >-
@@ -137,8 +173,8 @@ x-casaos:
   category: Others
   architectures:
     - amd64
-  version: "0.32.84"
-  update_at: "2026-09-14"
+  version: "0.32.85"
+  update_at: "2026-09-15"
   repo: https://github.com/isanto1306/Disk-Monitor
   support: https://github.com/isanto1306/Disk-Monitor/issues
   docs: https://github.com/isanto1306/Disk-Monitor#readme
