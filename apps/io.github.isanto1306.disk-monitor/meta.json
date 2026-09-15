@@ -1,6 +1,15 @@
 {
+  "thumbnail": "/apps/io.github.isanto1306.disk-monitor/assets/screenshot-1-dashboard.webp",
+  "screenshot_link": [
+    "/apps/io.github.isanto1306.disk-monitor/assets/screenshot-1-dashboard.webp",
+    "/apps/io.github.isanto1306.disk-monitor/assets/screenshot-2-drive-details.webp",
+    "/apps/io.github.isanto1306.disk-monitor/assets/screenshot-3-usb-standby.webp",
+    "/apps/io.github.isanto1306.disk-monitor/assets/screenshot-4-smart-check.webp",
+    "/apps/io.github.isanto1306.disk-monitor/assets/screenshot-5-smart-details.webp",
+    "/apps/io.github.isanto1306.disk-monitor/assets/screenshot-6-smart-history.webp"
+  ],
   "tagline": "Storage, SMART and disk activity monitoring for ZimaOS/Linux",
-  "description": "Self-hosted disk monitoring dashboard with SMART health, temperature,\nstandby state, activity and RAID information.\n\n**Before installation:** Use **Custom install → Advanced (show more)** and\nreplace all security placeholders before starting Disk Monitor for the\nfirst time. Set your own `DISK_MONITOR_USERNAME`, choose a\n`DISK_MONITOR_PASSWORD` with at least 12 characters, and generate a unique\n`DISK_MONITOR_SESSION_SECRET` with at least 32 characters. Do not install\nthe app with the `CHANGE_ME_...` values unchanged.\n\nLeave `DISK_MONITOR_SESSION_HTTPS_ONLY` set to `false` for normal local\nHTTP access. Set it to `true` only when Disk Monitor is served exclusively\nover HTTPS.\n",
+  "description": "Self-hosted disk monitoring dashboard with SMART health, temperature,\nstandby state, activity and RAID information.\n\n**Before installation:** Use **Custom install → Advanced (show more)** and\nreplace all security placeholders before starting Disk Monitor for the\nfirst time. Set your own `DISK_MONITOR_USERNAME`, choose a\n`DISK_MONITOR_PASSWORD` with at least 12 characters, and generate a unique\n`DISK_MONITOR_SESSION_SECRET` with at least 32 characters. Do not install\nthe app with the `CHANGE_ME_...` values unchanged.\n\nLeave `DISK_MONITOR_SESSION_HTTPS_ONLY` set to `false` for normal local\nHTTP access. Set it to `true` only when Disk Monitor is served exclusively\nover HTTPS.\n\n**Screenshots**\n\n![Disk Monitor dashboard](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-1-dashboard.webp)\n\n![Drive details](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-2-drive-details.webp)\n\n![USB standby drive details](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-3-usb-standby.webp)\n\n![SMART Check](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-4-smart-check.webp)\n\n![Advanced SMART data](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-5-smart-details.webp)\n\n![SMART history](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-6-smart-history.webp)\n",
   "tips": {
     "before_install": "Use Custom install → Advanced (show more) before the first start. Change DISK_MONITOR_USERNAME, set a password with at least 12 characters, and generate a unique session secret with at least 32 characters. Do not leave any CHANGE_ME_... placeholder unchanged."
   },
@@ -10,14 +19,14 @@
   "architectures": [
     "amd64"
   ],
-  "update_at": "2026-09-14",
+  "update_at": "2026-09-15",
   "repo": "https://github.com/isanto1306/Disk-Monitor",
   "support": "https://github.com/isanto1306/Disk-Monitor/issues",
   "docs": "https://github.com/isanto1306/Disk-Monitor#readme",
   "title": "Disk Monitor",
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "id": "io.github.isanto1306.disk-monitor",
-  "version": "0.32.84",
+  "version": "0.32.85",
   "categories": [
     "others"
   ],
