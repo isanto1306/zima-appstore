@@ -4,7 +4,7 @@ services:
   disk-monitor:
     container_name: disk-monitor
     hostname: disk-monitor
-    image: ghcr.io/isanto1306/disk-monitor:latest@sha256:488357658536f44dbccb908b7866cc353fa8a7f3fbb57910aa34d052d5766076
+    image: ghcr.io/isanto1306/disk-monitor:latest@sha256:4c096b153aa27594e57d23015c99abce887d265fdce6df1c5ad51bf85c1f2ec5
     restart: unless-stopped
     init: true
 
