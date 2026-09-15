@@ -94,6 +94,12 @@ x-casaos:
   port_map: "9001"
   scheme: http
   icon: https://raw.githubusercontent.com/isanto1306/Update-Monitor/main/static/update-monitor-source-highres.png
+  thumbnail: screenshot-1-dashboard.webp
+  screenshot_link:
+    - screenshot-1-dashboard.webp
+    - screenshot-2-details.webp
+    - screenshot-3-auto-updates.webp
+    - screenshot-4-backups.webp
   title:
     en_US: Update Monitor
     de_DE: Update Monitor
