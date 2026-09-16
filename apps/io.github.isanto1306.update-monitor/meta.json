@@ -7,7 +7,7 @@
     "/apps/io.github.isanto1306.update-monitor/assets/screenshot-4-backups.webp"
   ],
   "tagline": "Docker update monitoring, policies, backups and restore for ZimaOS",
-  "description": "Self-hosted Docker update dashboard for ZimaOS with image and version checks,\nper-app update policies, targeted verification, update installation, backup\nand restore workflows, and runtime information.\n\n**Before installation:** Use **Custom install → Advanced (show more)** and\nreplace all security placeholders before the first start. Set your own\n`UPDATE_MONITOR_USERNAME`, choose an `UPDATE_MONITOR_PASSWORD` with at least\n12 characters, and generate a unique `UPDATE_MONITOR_SESSION_SECRET` with\nat least 32 characters. Do not install the app with unchanged\n`CHANGE_ME_...` values.\n\n`UPDATE_MONITOR_GITHUB_TOKEN` is optional. Leave it empty if you do not\nwant to use a GitHub token.\n",
+  "description": "Self-hosted Docker update dashboard for ZimaOS with image and version checks,\nper-app update policies, targeted verification, update installation, backup\nand restore workflows, and runtime information.\n\nWhen Update Monitor updates itself, an open browser page detects the new\nbackend version and reloads automatically with cache busting.\n\n**Before installation:** Use **Custom install → Advanced (show more)** and\nreplace all security placeholders before the first start. Set your own\n`UPDATE_MONITOR_USERNAME`, choose an `UPDATE_MONITOR_PASSWORD` with at least\n12 characters, and generate a unique `UPDATE_MONITOR_SESSION_SECRET` with\nat least 32 characters. Do not install the app with unchanged\n`CHANGE_ME_...` values.\n\n`UPDATE_MONITOR_GITHUB_TOKEN` is optional. Leave it empty if you do not\nwant to use a GitHub token.\n",
   "tips": {
     "before_install": "Before the first start, use Custom install → Advanced (show more). Change UPDATE_MONITOR_USERNAME, set a password with at least 12 characters, and generate a unique session secret with at least 32 characters. Do not leave any CHANGE_ME_... placeholder unchanged."
   },
@@ -24,12 +24,12 @@
   "title": "Update Monitor",
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "id": "io.github.isanto1306.update-monitor",
-  "version": "0.3.330",
+  "version": "0.3.341",
   "categories": [
     "others"
   ],
   "min_memory": 536870912,
   "min_image_size": {
-    "amd64": 84687574
+    "amd64": 84688458
   }
 }
