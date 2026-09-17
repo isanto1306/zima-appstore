@@ -173,8 +173,8 @@ x-casaos:
   category: Others
   architectures:
     - amd64
-  version: "0.32.85"
-  update_at: "2026-09-15"
+  version: "0.32.86"
+  update_at: "2026-09-17"
   repo: https://github.com/isanto1306/Disk-Monitor
   support: https://github.com/isanto1306/Disk-Monitor/issues
   docs: https://github.com/isanto1306/Disk-Monitor#readme
