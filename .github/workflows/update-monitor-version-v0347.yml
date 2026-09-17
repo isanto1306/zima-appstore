@@ -1,0 +1,48 @@
+name: Update Monitor v0.3.347 store sync
+
+on:
+  push:
+    branches:
+      - update-monitor-v0.3.347
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: update-monitor-v0.3.347
+          fetch-depth: 0
+
+      - name: Update Store version
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('Apps/UpdateMonitor/docker-compose.yml')
+          text = path.read_text(encoding='utf-8')
+          old = 'version: "0.3.345"'
+          new = 'version: "0.3.347"'
+          if old in text:
+              text = text.replace(old, new)
+              path.write_text(text, encoding='utf-8')
+          elif new not in text:
+              raise SystemExit('Expected Update Monitor version marker not found')
+          PY
+          grep -n 'version: "0.3.347"' Apps/UpdateMonitor/docker-compose.yml
+          git diff --check
+
+      - name: Commit Store version
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Apps/UpdateMonitor/docker-compose.yml
+          if git diff --cached --quiet; then
+            echo "Store version already synchronized"
+          else
+            git commit -m "Update Update Monitor store version to v0.3.347"
+            git push origin update-monitor-v0.3.347
+          fi
