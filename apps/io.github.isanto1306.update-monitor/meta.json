@@ -17,19 +17,19 @@
   "architectures": [
     "amd64"
   ],
-  "update_at": "2026-09-16",
+  "update_at": "2026-09-17",
   "repo": "https://github.com/isanto1306/Update-Monitor",
   "support": "https://github.com/isanto1306/Update-Monitor/issues",
   "docs": "https://github.com/isanto1306/Update-Monitor#readme",
   "title": "Update Monitor",
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "id": "io.github.isanto1306.update-monitor",
-  "version": "0.3.341",
+  "version": "0.3.344",
   "categories": [
     "others"
   ],
   "min_memory": 536870912,
   "min_image_size": {
-    "amd64": 84688458
+    "amd64": 84692177
   }
 }
