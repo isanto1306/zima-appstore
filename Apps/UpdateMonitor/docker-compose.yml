@@ -150,14 +150,14 @@ x-casaos:
       de_DE: >-
         Vor dem ersten Start die benutzerdefinierte Installation → Erweitert
         verwenden. Benutzername ändern, ein Passwort mit mindestens 12 Zeichen
-        setzen und ein eindeutiges Session Geheimnis mit mindestens 32 Zeichen
+        setzen und einen eindeutigen Session Geheimnis mit mindestens 32 Zeichen
         erzeugen. Keine CHANGE_ME_... Platzhalter unverändert lassen.
   author: isanto1306
   developer: isanto1306
   category: Others
   architectures:
     - amd64
-  version: "0.3.349"
+  version: "0.3.350"
   update_at: "2026-09-17"
   repo: https://github.com/isanto1306/Update-Monitor
   support: https://github.com/isanto1306/Update-Monitor/issues
