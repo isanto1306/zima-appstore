@@ -24,12 +24,12 @@
   "title": "Update Monitor",
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "id": "io.github.isanto1306.update-monitor",
-  "version": "0.3.348",
+  "version": "0.3.349",
   "categories": [
     "others"
   ],
   "min_memory": 536870912,
   "min_image_size": {
-    "amd64": 84693548
+    "amd64": 84693800
   }
 }
