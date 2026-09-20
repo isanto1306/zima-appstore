@@ -4,7 +4,7 @@ services:
   update-monitor:
     container_name: update-monitor
     hostname: update-monitor
-    image: ghcr.io/isanto1306/update-monitor:latest@sha256:b6f033e815c4bfdc0d3bf4a46beb4c1801b22a430a7da92fc9b742e0830658cb
+    image: ghcr.io/isanto1306/update-monitor:latest@sha256:cd674e44ddc9d8d14faffadd98a4d831d996dfc3d9507ebd1363d8cc59f5342d
     restart: unless-stopped
     init: true
 
