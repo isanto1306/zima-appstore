@@ -1,2 +1,2 @@
 ghcr.io/isanto1306/disk-monitor:latest sha256:6221e66906adb0c76e714d67dab79f1c43162de82a2b834bf90cc422dac967c9
-ghcr.io/isanto1306/update-monitor:latest sha256:0a56c3e5516ee87a0b989fa5b284633ec99baf172fc013e704854e8897d0088a
+ghcr.io/isanto1306/update-monitor:latest sha256:3687125557fe4ae36c9e86943d27593de4c39df0a911094fc682a7383ab18ea8
