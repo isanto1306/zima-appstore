@@ -2,13 +2,13 @@
   "apps": [
     {
       "id": "io.github.isanto1306.disk-monitor",
-      "tagline": "Speicher-, SMART- und Festplattenaktivitätsüberwachung für ZimaOS/Linux",
-      "title": "Disk Monitor"
+      "title": "Disk Monitor",
+      "tagline": "Speicher-, SMART- und Festplattenaktivitätsüberwachung für ZimaOS/Linux"
     },
     {
       "id": "io.github.isanto1306.update-monitor",
-      "tagline": "Docker Update Überwachung, Richtlinien, Backups und Wiederherstellung für ZimaOS",
-      "title": "Update Monitor"
+      "title": "Update Monitor",
+      "tagline": "Docker Update Überwachung, Richtlinien, Backups und Wiederherstellung für ZimaOS"
     }
   ]
 }
