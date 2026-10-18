@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "id": "io.github.isanto1306.install-monitor",
+      "title": "Install Monitor",
+      "tagline": "Instalación guiada de aplicaciones Docker y Compose para ZimaOS"
+    }
+  ]
+}
