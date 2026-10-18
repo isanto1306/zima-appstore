@@ -1,0 +1,235 @@
+# Install Monitor v0.2.56 public beta for iSanto1306 ZimaOS App Store.
+# For the first installation, replace every CHANGE_ME_... value under
+# Custom install -> Advanced before starting. The server refuses placeholders.
+# Docker socket access provides broad control over the Docker host.
+name: install-monitor
+
+services:
+  install-monitor:
+    container_name: install-monitor
+    hostname: install-monitor
+    image: ghcr.io/isanto1306/install-monitor:beta
+    restart: unless-stopped
+    init: true
+    network_mode: host
+    depends_on:
+      - registry
+
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+
+    labels:
+      icon: https://raw.githubusercontent.com/isanto1306/Install-Monitor/main/static/install-monitor-icon.png
+
+    environment:
+      IM_ADMIN_USERNAME: "CHANGE_ME_USERNAME"
+      IM_ADMIN_PASSWORD: "CHANGE_ME_PASSWORD_AT_LEAST_12_CHARS"
+      IM_SESSION_SECRET: "CHANGE_ME_SESSION_SECRET_AT_LEAST_32_CHARS"
+      IM_ENFORCE_CREDENTIAL_POLICY: "true"
+      IM_COOKIE_SECURE: "false"
+
+    volumes:
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+      - type: bind
+        source: /DATA/AppData/Install-Monitor/data
+        target: /app/data
+      - type: bind
+        source: /DATA
+        target: /im-browse/DATA
+        read_only: true
+      - type: bind
+        source: /media
+        target: /im-browse/media
+        read_only: true
+
+    security_opt:
+      - no-new-privileges:true
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    stop_grace_period: 30s
+
+    x-casaos:
+      envs:
+        - container: IM_ADMIN_USERNAME
+          description:
+            en_US: Required administrator login name (3–64 letters, numbers, dot, hyphen or underscore). Replace CHANGE_ME before installing.
+            de_DE: Erforderlicher Administrator-Benutzername (3–64 Zeichen). CHANGE_ME vor der Installation ersetzen.
+            fr_FR: Nom de l'administrateur requis (3 à 64 caractères). Remplacer CHANGE_ME avant l'installation.
+            pt_PT: Nome de administrador obrigatório (3 a 64 caracteres). Substituir CHANGE_ME antes de instalar.
+            es_ES: Nombre de administrador obligatorio (3 a 64 caracteres). Sustituir CHANGE_ME antes de instalar.
+        - container: IM_ADMIN_PASSWORD
+          description:
+            en_US: Required administrator password with at least 12 characters. Use a unique password; do not keep CHANGE_ME.
+            de_DE: Erforderliches Administrator-Passwort mit mindestens 12 Zeichen. Ein eigenes Passwort statt CHANGE_ME eintragen.
+            fr_FR: Mot de passe administrateur obligatoire d'au moins 12 caractères. Ne pas conserver CHANGE_ME.
+            pt_PT: Palavra-passe de administrador obrigatória com pelo menos 12 caracteres. Não manter CHANGE_ME.
+            es_ES: Contraseña de administrador obligatoria de al menos 12 caracteres. No conservar CHANGE_ME.
+        - container: IM_SESSION_SECRET
+          description:
+            en_US: Required private random session secret, at least 32 characters. Generate a unique value before installation; never keep CHANGE_ME.
+            de_DE: Erforderliches privates zufälliges Session-Secret, mindestens 32 Zeichen. Vor der Installation ein eigenes Secret erzeugen.
+            fr_FR: Secret de session privé et aléatoire obligatoire, d'au moins 32 caractères. Ne pas conserver CHANGE_ME.
+            pt_PT: Segredo de sessão privado e aleatório obrigatório, com pelo menos 32 caracteres. Não manter CHANGE_ME.
+            es_ES: Secreto de sesión privado y aleatorio obligatorio, de al menos 32 caracteres. No conservar CHANGE_ME.
+        - container: IM_ENFORCE_CREDENTIAL_POLICY
+          description:
+            en_US: Keep true to require a strong administrator password and session secret.
+            de_DE: Auf true belassen, damit ein starkes Passwort und Session-Secret verlangt werden.
+        - container: IM_COOKIE_SECURE
+          description:
+            en_US: Keep false for local HTTP. Use true only when accessing exclusively via HTTPS.
+            de_DE: Für lokales HTTP false belassen. Nur bei ausschließlich HTTPS auf true setzen.
+      volumes:
+        - container: /app/data
+          description:
+            en_US: Persistent app settings and GitHub integration; never publish this folder.
+            de_DE: Persistente App-Einstellungen und GitHub-Integration; diesen Ordner niemals veröffentlichen.
+        - container: /im-browse/DATA
+          description:
+            en_US: Read-only NAS data browsing for choosing installation paths.
+            de_DE: Schreibgeschützter Zugriff auf NAS-Daten zur Auswahl von Installationspfaden.
+        - container: /im-browse/media
+          description:
+            en_US: Read-only NAS media browsing for choosing installation paths.
+            de_DE: Schreibgeschützter Zugriff auf NAS-Medien zur Auswahl von Installationspfaden.
+
+  registry:
+    image: registry:2.8.3
+    container_name: install-monitor-local-registry
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:50813:5000"
+    volumes:
+      - type: bind
+        source: /DATA/AppData/Install-Monitor/registry
+        target: /var/lib/registry
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 128
+    mem_limit: 256m
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+x-casaos:
+  id: io.github.isanto1306.install-monitor
+  store_app_id: install-monitor
+  main: install-monitor
+  index: /
+  port_map: "9012"
+  scheme: http
+  icon: https://raw.githubusercontent.com/isanto1306/Install-Monitor/main/static/install-monitor-icon.png
+  title:
+    en_US: Install Monitor
+    de_DE: Install Monitor
+    fr_FR: Install Monitor
+    pt_PT: Install Monitor
+    es_ES: Install Monitor
+  tagline:
+    en_US: Guided Docker and Compose app installation for ZimaOS
+    de_DE: Geführte Installation von Docker- und Compose-Apps für ZimaOS
+    fr_FR: Installation guidée d'applications Docker et Compose pour ZimaOS
+    pt_PT: Instalação guiada de aplicações Docker e Compose para ZimaOS
+    es_ES: Instalación guiada de aplicaciones Docker y Compose para ZimaOS
+  description:
+    en_US: |
+      Self-hosted installation assistant for Docker images, GitHub projects and
+      Compose applications on ZimaOS. Includes four app catalogs, multi-container
+      configuration, resource and GPU options, and five interface languages.
+
+      **IMPORTANT — Before installation:** Choose Custom install → Advanced and
+      replace IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (at least 12 characters),
+      and IM_SESSION_SECRET (a unique random secret, at least 32 characters).
+      The app deliberately refuses to start with CHANGE_ME placeholders.
+
+      Access the web interface on port 9012 only via a trusted LAN, VPN or
+      secured HTTPS reverse proxy. Docker socket access provides extensive
+      permissions on the NAS. Port 50813 is reserved for a localhost-only
+      registry. Existing Install Monitor deployments must not be overwritten.
+      This is a beta; a clean ZimaOS store installation is not yet verified.
+    de_DE: |
+      Selbst gehosteter Installationsassistent für Docker-Images, GitHub-Projekte
+      und Compose-Anwendungen auf ZimaOS. Mit vier App-Katalogen, Konfiguration
+      mehrerer Container, Ressourcen- und GPU-Optionen sowie fünf Sprachen.
+
+      **WICHTIG – vor der Installation:** Benutzerdefinierte Installation →
+      Erweitert öffnen. IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (mindestens
+      12 Zeichen) und IM_SESSION_SECRET (eindeutiger Zufallswert mit mindestens
+      32 Zeichen) eintragen. Mit CHANGE_ME-Platzhaltern startet die App nicht.
+
+      Die Oberfläche auf Port 9012 nur im vertrauenswürdigen LAN, über VPN
+      oder einen abgesicherten HTTPS-Reverse-Proxy verwenden. Docker-Socket-Zugriff
+      ermöglicht weitreichende NAS-Rechte. Port 50813 dient ausschließlich der
+      lokalen Registry. Bestehende Installationen nicht überschreiben.
+      Dies ist eine Beta; eine saubere ZimaOS-Store-Installation ist noch nicht geprüft.
+    fr_FR: |
+      Assistant d'installation pour les images Docker, les projets GitHub et
+      Docker Compose sur ZimaOS, avec quatre catalogues et cinq langues.
+      Avant l'installation, utiliser l'installation personnalisée avancée
+      et remplacer IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (12 caractères minimum)
+      et IM_SESSION_SECRET (32 caractères aléatoires minimum).
+      Les valeurs CHANGE_ME sont refusées. Garder le port 9012 privé (LAN/VPN).
+      Accès Docker à privilèges élevés. Version bêta non encore testée sur un NAS neuf.
+    pt_PT: |
+      Assistente para instalar imagens Docker, projetos GitHub e aplicações
+      Docker Compose no ZimaOS, com quatro catálogos e cinco idiomas.
+      Antes da instalação, utilizar a instalação personalizada avançada e definir
+      IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (mínimo 12 caracteres) e
+      IM_SESSION_SECRET (segredo aleatório com pelo menos 32 caracteres).
+      Os valores CHANGE_ME são rejeitados. Manter a porta 9012 privada (LAN/VPN).
+      O acesso ao Docker permite operações privilegiadas. Versão beta.
+    es_ES: |
+      Asistente para instalar imágenes Docker, proyectos GitHub y aplicaciones
+      Docker Compose en ZimaOS, con cuatro catálogos y cinco idiomas.
+      Antes de instalar, usar la instalación personalizada avanzada y definir
+      IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (mínimo 12 caracteres) e
+      IM_SESSION_SECRET (secreto aleatorio de al menos 32 caracteres).
+      Los valores CHANGE_ME se rechazan. Mantener privado el puerto 9012 (LAN/VPN).
+      El acceso a Docker tiene privilegios elevados. Versión beta.
+  tips:
+    before_install:
+      en_US: >-
+        Advanced custom installation is REQUIRED. Replace IM_ADMIN_USERNAME,
+        IM_ADMIN_PASSWORD (12+ characters) and IM_SESSION_SECRET (32+ random
+        characters). Do not install with CHANGE_ME placeholders. Keep port 9012
+        off the public Internet. Do not reinstall over an existing deployment.
+      de_DE: >-
+        Benutzerdefinierte Installation → Erweitert ist ERFORDERLICH. Eigene
+        Werte für IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (mindestens 12 Zeichen)
+        und IM_SESSION_SECRET (mindestens 32 Zufallszeichen) eintragen.
+        Keine CHANGE_ME-Platzhalter verwenden und Port 9012 nicht öffentlich freigeben.
+      fr_FR: >-
+        Installation personnalisée avancée obligatoire : choisir un nom,
+        un mot de passe (12 caractères minimum) et un secret aléatoire
+        (32 caractères minimum). Ne pas conserver CHANGE_ME.
+      pt_PT: >-
+        Instalação personalizada avançada obrigatória: definir utilizador,
+        palavra-passe (mínimo 12 caracteres) e segredo aleatório (mínimo 32).
+        Não manter CHANGE_ME.
+      es_ES: >-
+        Instalación personalizada avanzada obligatoria: definir usuario,
+        contraseña (mínimo 12 caracteres) y secreto aleatorio (mínimo 32).
+        No conservar CHANGE_ME.
+  author: isanto1306
+  developer: isanto1306
+  category: Developer
+  architectures:
+    - amd64
+  version: "0.2.56"
+  update_at: "2026-10-18"
+  repo: https://github.com/isanto1306/Install-Monitor
+  support: https://github.com/isanto1306/Install-Monitor/issues
+  docs: https://github.com/isanto1306/Install-Monitor#readme
