@@ -4,7 +4,7 @@ services:
   update-monitor:
     container_name: update-monitor
     hostname: update-monitor
-    image: ghcr.io/isanto1306/update-monitor:latest@sha256:047bb6cb185265d048ffe83f0cf45ca3c6e42bad366d278d90a6f6b9df693ab9
+    image: ghcr.io/isanto1306/update-monitor:0.3.424@sha256:1987f0f5c631a70ede173bf6ae9dde80aed3473def31f1ea928faa70961413b0
     restart: unless-stopped
     init: true
 
@@ -57,4 +57,4 @@ x-casaos:
   title:
     en_US: Update Monitor
     de_DE: Update Monitor
-  version: "0.3.422"
+  version: "0.3.424"
