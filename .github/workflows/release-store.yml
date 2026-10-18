@@ -28,6 +28,9 @@ jobs:
           cache-file: .cache/build_appstore/image-size-cache.json
           digest-cache-file: .cache/build_appstore/image-digest-cache.json
 
+      - name: Preserve original Install Monitor icon everywhere
+        run: python3 scripts/pin_install_monitor_icon.py dist
+
       - name: Show what was built
         run: |
           echo "--- dist tree ---"
