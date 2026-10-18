@@ -82,7 +82,7 @@ x-casaos:
   index: /
   port_map: "9012"
   scheme: http
-  icon: https://isanto1306.github.io/zima-appstore/apps/io.github.isanto1306.install-monitor/assets/icon.png
+  icon: https://raw.githubusercontent.com/isanto1306/Install-Monitor/main/static/install-monitor-icon.png
   title:
     en_US: Install Monitor
     de_DE: Install Monitor
