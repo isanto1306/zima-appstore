@@ -1,4 +1,4 @@
-# Install Monitor v0.2.56-beta.2 public beta for iSanto1306 ZimaOS App Store.
+# Install Monitor v0.2.56-beta.3 public beta for iSanto1306 ZimaOS App Store.
 # For the first installation, replace every CHANGE_ME_... value under
 # Custom install -> Advanced before starting. The server refuses placeholders.
 # Docker socket access provides broad control over the Docker host.
@@ -8,7 +8,7 @@ services:
   install-monitor:
     container_name: install-monitor
     hostname: install-monitor
-    image: ghcr.io/isanto1306/install-monitor:0.2.56-beta.2@sha256:d297e0e20d808a1254103d2564ead9cb681f2f009e8b1ae9ca2597e7f6233da6
+    image: ghcr.io/isanto1306/install-monitor:0.2.56-beta.3@sha256:9c29e277a62c9315fea125ef71c9c207b13570b96da9081c49a2de7e77ab717a
     restart: unless-stopped
     init: true
     network_mode: host
@@ -89,4 +89,4 @@ x-casaos:
     fr_FR: Install Monitor
     pt_PT: Install Monitor
     es_ES: Install Monitor
-  version: "0.2.56-beta.2"
+  version: "0.2.56-beta.3"

@@ -1,6 +1,6 @@
 {
   "tagline": "Guided Docker and Compose app installation for ZimaOS",
-  "description": "Self-hosted installation assistant for Docker images, GitHub projects and\nCompose applications on ZimaOS. Includes four app catalogs, multi-container\nconfiguration, resource and GPU options, and five interface languages.\nFirst launch defaults to English; any previously saved language remains selected.\n\n**IMPORTANT — Before installation:** Choose Custom install → Advanced and\nreplace IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (at least 12 characters),\nand IM_SESSION_SECRET (a unique random secret, at least 32 characters).\nThe app deliberately refuses to start with CHANGE_ME placeholders.\n\nAccess the web interface on port 9012 only via a trusted LAN, VPN or\nsecured HTTPS reverse proxy. Docker socket access provides extensive\npermissions on the NAS. Port 50813 is reserved for a localhost-only\nregistry. Existing Install Monitor deployments must not be overwritten.\nThis is a beta; a clean ZimaOS store installation is not yet verified.\n",
+  "description": "Self-hosted installation assistant for Docker images, GitHub projects and\nCompose applications on ZimaOS. Includes four app catalogs, multi-container\nconfiguration, resource and GPU options, and five interface languages.\nFirst launch defaults to English; any previously saved language remains selected.\nBeta 3: enter your ZimaOS administration LAN address, not the Install Monitor public URL. For an approved reverse proxy, provide the ZimaOS LAN address in the new internal-address field.\n\n**IMPORTANT — Before installation:** Choose Custom install → Advanced and\nreplace IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (at least 12 characters),\nand IM_SESSION_SECRET (a unique random secret, at least 32 characters).\nThe app deliberately refuses to start with CHANGE_ME placeholders.\n\nAccess the web interface on port 9012 only via a trusted LAN, VPN or\nsecured HTTPS reverse proxy. Docker socket access provides extensive\npermissions on the NAS. Port 50813 is reserved for a localhost-only\nregistry. Existing Install Monitor deployments must not be overwritten.\nThis is a beta; a clean ZimaOS store installation is not yet verified.\n",
   "tips": {
     "before_install": "Advanced custom installation is REQUIRED. Replace IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (12+ characters) and IM_SESSION_SECRET (32+ random characters). Do not install with CHANGE_ME placeholders. Keep port 9012 off the public Internet. Do not reinstall over an existing deployment."
   },
@@ -10,19 +10,19 @@
   "architectures": [
     "amd64"
   ],
-  "update_at": "2026-10-18",
+  "update_at": "2026-10-19",
   "repo": "https://github.com/isanto1306/Install-Monitor",
   "support": "https://github.com/isanto1306/Install-Monitor/issues",
   "docs": "https://github.com/isanto1306/Install-Monitor#readme",
   "title": "Install Monitor",
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "id": "io.github.isanto1306.install-monitor",
-  "version": "0.2.56-beta.2",
+  "version": "0.2.56-beta.3",
   "categories": [
     "developer"
   ],
   "min_memory": 536870912,
   "min_image_size": {
-    "amd64": 61174397
+    "amd64": 61175547
   }
 }
