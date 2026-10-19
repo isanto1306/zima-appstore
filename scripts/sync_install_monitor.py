@@ -18,7 +18,7 @@ SOURCE = "https://raw.githubusercontent.com/isanto1306/Install-Monitor/main/main
 BASE = "ghcr.io/isanto1306/install-monitor"
 VER = r"(?:[0-9]+\.){2}[0-9]+-beta\.[0-9]+"
 IMAGE_LINE = re.compile(r"(?m)^(    image: " + re.escape(BASE) + r":)(" + VER + r")(\s*)$")
-VERSION_LINE = re.compile(r'(?m)^(  version: ")(' + VER + r')(")[ \t]*
+VERSION_LINE = re.compile(r'(?m)^(  version: ")(' + VER + r')(")[ \t]*$')
 HEADER_LINE = re.compile(r"(?m)^(# Install Monitor v)(" + VER + r")(.*)$")
 BACKEND_LINE = re.compile(r'(?m)^VERSION = "(' + VER + r')"$')
 
