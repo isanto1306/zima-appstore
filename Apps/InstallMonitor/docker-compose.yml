@@ -1,4 +1,4 @@
-# Install Monitor v0.2.56-beta.3 public beta for iSanto1306 ZimaOS App Store.
+# Install Monitor v0.2.56-beta.11 public beta for iSanto1306 ZimaOS App Store.
 # For the first installation, replace every CHANGE_ME_... value under
 # Custom install -> Advanced before starting. The server refuses placeholders.
 # Docker socket access provides broad control over the Docker host.
@@ -8,7 +8,7 @@ services:
   install-monitor:
     container_name: install-monitor
     hostname: install-monitor
-    image: ghcr.io/isanto1306/install-monitor:0.2.56-beta.3
+    image: ghcr.io/isanto1306/install-monitor:0.2.56-beta.11
     restart: unless-stopped
     init: true
     network_mode: host
@@ -150,7 +150,7 @@ x-casaos:
       Compose applications on ZimaOS. Includes four app catalogs, multi-container
       configuration, resource and GPU options, and five interface languages.
       First launch defaults to English; any previously saved language remains selected.
-      Beta 3: enter your ZimaOS administration LAN address, not the Install Monitor public URL. For an approved reverse proxy, provide the ZimaOS LAN address in the new internal-address field.
+      Beta 11: the ZimaOS administration LAN address is saved for future installations. When an authenticator is configured or a reverse proxy host is allowed, each installation requires a one-time authentication code. Codeberg/GitHub source builds verify an immutable commit.
 
       **IMPORTANT — Before installation:** Choose Custom install → Advanced and
       replace IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (at least 12 characters),
@@ -167,7 +167,7 @@ x-casaos:
       und Compose-Anwendungen auf ZimaOS. Mit vier App-Katalogen, Konfiguration
       mehrerer Container, Ressourcen- und GPU-Optionen sowie fünf Sprachen.
       Neue Installationen starten auf Englisch. Gespeicherte Sprachen bleiben erhalten.
-      Beta 3: Als ZimaOS-Adresse die LAN-Adresse der ZimaOS-Verwaltung eingeben, nicht die öffentliche Install-Monitor-Domain. Bei freigegebenem Reverse Proxy lässt sich die interne Adresse im neuen Formularfeld festlegen.
+      Beta 11: Die ZimaOS-Verwaltungsadresse wird dauerhaft gespeichert. Bei eingerichtetem Authenticator oder freigegebenem Reverse Proxy ist vor jeder Installation ein Einmalcode erforderlich. Codeberg-/GitHub-Builds werden durch eine Commit-Prüfung abgesichert.
 
       **WICHTIG – vor der Installation:** Benutzerdefinierte Installation →
       Erweitert öffnen. IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (mindestens
@@ -232,7 +232,7 @@ x-casaos:
   category: Developer
   architectures:
     - amd64
-  version: "0.2.56-beta.3"
+  version: "0.2.56-beta.11"
   update_at: "2026-10-19"
   repo: https://github.com/isanto1306/Install-Monitor
   support: https://github.com/isanto1306/Install-Monitor/issues
