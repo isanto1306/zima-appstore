@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-19T11:53:19Z",
+  "updated_at": "2026-10-19T16:54:37Z",
   "app_count": 3,
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "apps": [
@@ -41,8 +41,8 @@
       "thumbnail": "",
       "compose_url": "/apps/io.github.isanto1306.install-monitor/docker-compose.yml",
       "meta_url": "/apps/io.github.isanto1306.install-monitor/meta.json",
-      "content_hash": "9de011a4",
-      "version": "0.2.56-beta.11"
+      "content_hash": "53dafbdf",
+      "version": "0.2.56-beta.12"
     },
     {
       "id": "io.github.isanto1306.update-monitor",

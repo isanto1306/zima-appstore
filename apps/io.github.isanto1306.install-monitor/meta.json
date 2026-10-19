@@ -17,12 +17,12 @@
   "title": "Install Monitor",
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "id": "io.github.isanto1306.install-monitor",
-  "version": "0.2.56-beta.11",
+  "version": "0.2.56-beta.12",
   "categories": [
     "developer"
   ],
   "min_memory": 536870912,
   "min_image_size": {
-    "amd64": 73252899
+    "amd64": 73254134
   }
 }
