@@ -24,6 +24,9 @@ jobs:
       - name: Set up Docker Buildx for GHCR manifest verification
         uses: docker/setup-buildx-action@v3
 
+      - name: Test store version synchronization
+        run: python3 -m unittest discover -s tests -v
+
       - name: Sync Install Monitor to latest published GHCR beta
         run: python3 scripts/sync_install_monitor.py
 
