@@ -150,7 +150,7 @@ x-casaos:
       Compose applications on ZimaOS. Includes four app catalogs, multi-container
       configuration, resource and GPU options, and five interface languages.
       First launch defaults to English; any previously saved language remains selected.
-      Beta 11: the ZimaOS administration LAN address is saved for future installations. When an authenticator is configured or a reverse proxy host is allowed, each installation requires a one-time authentication code. Codeberg/GitHub source builds verify an immutable commit.
+      The ZimaOS administration LAN address is saved for future installations. When an authenticator is configured or a reverse proxy host is allowed, each installation requires an authenticator code. GitHub/Codeberg source builds verify an immutable commit.
 
       **IMPORTANT — Before installation:** Choose Custom install → Advanced and
       replace IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (at least 12 characters),
@@ -167,7 +167,7 @@ x-casaos:
       und Compose-Anwendungen auf ZimaOS. Mit vier App-Katalogen, Konfiguration
       mehrerer Container, Ressourcen- und GPU-Optionen sowie fünf Sprachen.
       Neue Installationen starten auf Englisch. Gespeicherte Sprachen bleiben erhalten.
-      Beta 11: Die ZimaOS-Verwaltungsadresse wird dauerhaft gespeichert. Bei eingerichtetem Authenticator oder freigegebenem Reverse Proxy ist vor jeder Installation ein Einmalcode erforderlich. Codeberg-/GitHub-Builds werden durch eine Commit-Prüfung abgesichert.
+      Die ZimaOS-Verwaltungsadresse wird dauerhaft gespeichert. Bei eingerichtetem Authenticator oder freigegebenem Reverse Proxy ist vor jeder Installation ein Authenticator-Code erforderlich. GitHub-/Codeberg-Builds werden durch eine Commit-Prüfung abgesichert.
 
       **WICHTIG – vor der Installation:** Benutzerdefinierte Installation →
       Erweitert öffnen. IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (mindestens
