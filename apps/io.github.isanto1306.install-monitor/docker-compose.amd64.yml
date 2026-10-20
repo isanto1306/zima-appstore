@@ -8,7 +8,7 @@ services:
   install-monitor:
     container_name: install-monitor
     hostname: install-monitor
-    image: ghcr.io/isanto1306/install-monitor:0.2.56-beta.13@sha256:17a987f4d47ddc53d06d0cbb98d06bb4fc05236bf6b7082822579e2a4c3ab56a
+    image: ghcr.io/isanto1306/install-monitor:0.2.56-beta.13@sha256:9d0e985d4e495feb369fb55a62ee4e813a9bf9b9118fc7d55ca72750d109a9cd
     restart: unless-stopped
     init: true
     network_mode: host
