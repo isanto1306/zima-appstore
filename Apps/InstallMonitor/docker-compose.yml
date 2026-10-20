@@ -1,4 +1,4 @@
-# Install Monitor v0.2.58-beta.15 public beta for iSanto1306 ZimaOS App Store.
+# Install Monitor v0.2.59-beta.16 public beta for iSanto1306 ZimaOS App Store.
 # For the first installation, replace every CHANGE_ME_... value under
 # Custom install -> Advanced before starting. The server refuses placeholders.
 # Docker socket access provides broad control over the Docker host.
@@ -8,7 +8,7 @@ services:
   install-monitor:
     container_name: install-monitor
     hostname: install-monitor
-    image: ghcr.io/isanto1306/install-monitor:0.2.58-beta.15
+    image: ghcr.io/isanto1306/install-monitor:0.2.59-beta.16
     restart: unless-stopped
     init: true
     network_mode: host
@@ -149,8 +149,9 @@ x-casaos:
       Self-hosted installation assistant for Docker images, GitHub projects and
       Compose applications on ZimaOS. Includes four app catalogs, multi-container
       configuration, resource and GPU options, and five interface languages.
-      Beta 15 prefers verified ZimaOS publisher stacks, checks required external
-      Docker networks before installing, and supports one-shot setup containers.
+      Beta 16 protects publisher POSIX shell commands from repeated Docker Compose
+      variable expansion by ZimaOS, including Nametag secret initialization and cron.
+      Verified ZimaOS recipes, network preflight and one-shot setups remain supported.
       First launch defaults to English; any previously saved language remains selected.
       The ZimaOS administration LAN address is saved for future installations. When an authenticator is configured or a reverse proxy host is allowed, each installation requires an authenticator code. GitHub/Codeberg source builds verify an immutable commit.
 
@@ -168,8 +169,9 @@ x-casaos:
       Selbst gehosteter Installationsassistent für Docker-Images, GitHub-Projekte
       und Compose-Anwendungen auf ZimaOS. Mit vier App-Katalogen, Konfiguration
       mehrerer Container, Ressourcen- und GPU-Optionen sowie fünf Sprachen.
-      Beta 15 bevorzugt geprüfte ZimaOS-Hersteller-Compose-Dateien, prüft
-      benötigte externe Netzwerke und erkennt einmalige Initialisierungsdienste.
+      Beta 16 schützt Hersteller-Shell-Skripte vor mehrfacher Compose-Auswertung,
+      insbesondere bei der automatischen Nametag-Secret-Erzeugung und Cron-Jobs.
+      ZimaOS-Hersteller-Compose, Netzwerkprüfung und einmalige Init-Dienste bleiben erhalten.
       Neue Installationen starten auf Englisch. Gespeicherte Sprachen bleiben erhalten.
       Die ZimaOS-Verwaltungsadresse wird dauerhaft gespeichert. Bei eingerichtetem Authenticator oder freigegebenem Reverse Proxy ist vor jeder Installation ein Authenticator-Code erforderlich. GitHub-/Codeberg-Builds werden durch eine Commit-Prüfung abgesichert.
 
@@ -236,7 +238,7 @@ x-casaos:
   category: Developer
   architectures:
     - amd64
-  version: "0.2.58-beta.15"
+  version: "0.2.59-beta.16"
   update_at: "2026-10-20"
   repo: https://github.com/isanto1306/Install-Monitor
   support: https://github.com/isanto1306/Install-Monitor/issues
