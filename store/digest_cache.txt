@@ -1,4 +1,4 @@
 ghcr.io/isanto1306/disk-monitor:latest sha256:a28d2f41495a21048399697b242dc2b570a1d171701e05ffc631b5509a104011
 ghcr.io/isanto1306/install-monitor:0.2.62-beta.19 sha256:50cb4c4b1e8b2894a1eca9ce2d76f271ff51dbb60b274977968e8c7af48e5f53
-ghcr.io/isanto1306/update-monitor:latest sha256:7b664da4642e3d5343b46c003c3bf5ec6ea3b829c08d0a8b47ec4bd7f21bff27
+ghcr.io/isanto1306/update-monitor:latest sha256:f30d3109cf2c944e9181bc64c0d0f078fba111089efccf303e2bb1929f1e943a
 registry:2.8.3 sha256:46faa9a1ae6813194b53921a370f2f4f8c5e1aae228a89bceafef5847a6a3278
