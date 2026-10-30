@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-30T19:27:09Z",
+  "updated_at": "2026-10-30T23:50:54Z",
   "app_count": 3,
   "base_url": "https://isanto1306.github.io/zima-appstore",
   "apps": [
@@ -21,7 +21,7 @@
       "thumbnail": "/apps/io.github.isanto1306.disk-monitor/assets/screenshot-1-dashboard.webp",
       "compose_url": "/apps/io.github.isanto1306.disk-monitor/docker-compose.yml",
       "meta_url": "/apps/io.github.isanto1306.disk-monitor/meta.json",
-      "content_hash": "f9e992df",
+      "content_hash": "fb67f620",
       "version": "0.32.103"
     },
     {
@@ -41,7 +41,7 @@
       "thumbnail": "",
       "compose_url": "/apps/io.github.isanto1306.install-monitor/docker-compose.yml",
       "meta_url": "/apps/io.github.isanto1306.install-monitor/meta.json",
-      "content_hash": "5e950903",
+      "content_hash": "574bb505",
       "version": "0.2.65-beta.22"
     },
     {
@@ -61,7 +61,7 @@
       "thumbnail": "/apps/io.github.isanto1306.update-monitor/assets/screenshot-1-dashboard.webp",
       "compose_url": "/apps/io.github.isanto1306.update-monitor/docker-compose.yml",
       "meta_url": "/apps/io.github.isanto1306.update-monitor/meta.json",
-      "content_hash": "49ca2c2a",
+      "content_hash": "b3d89531",
       "version": "0.3.429"
     }
   ]
