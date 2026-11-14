@@ -102,7 +102,7 @@ x-casaos:
   description:
     en_US: |
       Self-hosted disk monitoring dashboard with SMART health, temperature,
-      standby state, activity and RAID information.
+      standby state, activity and RAID information.\n      Includes a clearly labeled DDownload affiliate disclosure.
 
       **Before installation:** Use **Custom install → Advanced (show more)** and
       replace all security placeholders before starting Disk Monitor for the
@@ -130,7 +130,7 @@ x-casaos:
       ![SMART history](https://raw.githubusercontent.com/isanto1306/zima-appstore/main/Apps/DiskMonitor/screenshot-6-smart-history.webp)
     de_DE: |
       Selbst gehostetes Festplatten-Dashboard mit SMART-Zustand, Temperatur,
-      Standby-Status, Aktivität und RAID-Informationen.
+      Standby-Status, Aktivität und RAID-Informationen.\n      Enthält einen deutlich gekennzeichneten DDownload-Affiliate-Hinweis.
 
       **Vor der Installation:** Über **Benutzerdefinierte Installation → Erweitert**
       alle Sicherheits-Platzhalter vor dem ersten Start ändern. Einen eigenen
@@ -173,8 +173,8 @@ x-casaos:
   category: Others
   architectures:
     - amd64
-  version: "0.32.103"
-  update_at: "2026-10-23"
+  version: "0.32.105"
+  update_at: "2026-11-14"
   repo: https://github.com/isanto1306/Disk-Monitor
   support: https://github.com/isanto1306/Disk-Monitor/issues
   docs: https://github.com/isanto1306/Disk-Monitor#readme
