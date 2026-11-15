@@ -1,8 +1,8 @@
 {
   "id": "io.github.isanto1306.install-monitor",
   "title": "Install Monitor",
-  "description": "Assistant d'installation pour les images Docker, les projets GitHub et\nDocker Compose sur ZimaOS, avec quatre catalogues et cinq langues.\nAvant l'installation, utiliser l'installation personnalisée avancée\net remplacer IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (12 caractères minimum)\net IM_SESSION_SECRET (32 caractères aléatoires minimum).\nLes valeurs CHANGE_ME sont refusées. Garder le port 9012 privé (LAN/VPN).\nAccès Docker à privilèges élevés. Version bêta non encore testée sur un NAS neuf.\n",
   "tagline": "Installation guidée d'applications Docker et Compose pour ZimaOS",
+  "description": "Assistant d'installation pour les images Docker, les projets GitHub et\nDocker Compose sur ZimaOS, avec quatre catalogues et cinq langues.\nAvant l'installation, utiliser l'installation personnalisée avancée\net remplacer IM_ADMIN_USERNAME, IM_ADMIN_PASSWORD (12 caractères minimum)\net IM_SESSION_SECRET (32 caractères aléatoires minimum).\nLes valeurs CHANGE_ME sont refusées. Garder le port 9012 privé (LAN/VPN).\nAccès Docker à privilèges élevés. Version bêta non encore testée sur un NAS neuf.\n",
   "tips": {
     "before_install": "Installation personnalisée avancée obligatoire : choisir un nom, un mot de passe (12 caractères minimum) et un secret aléatoire (32 caractères minimum). Ne pas conserver CHANGE_ME."
   }
