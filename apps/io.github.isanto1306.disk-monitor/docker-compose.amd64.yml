@@ -4,7 +4,7 @@ services:
   disk-monitor:
     container_name: disk-monitor
     hostname: disk-monitor
-    image: ghcr.io/isanto1306/disk-monitor:latest@sha256:0a30ef93ee18c243cc4cb8b44f8f18eb39672f554d7e111dc3e62b69a52458f9
+    image: ghcr.io/isanto1306/disk-monitor:latest@sha256:c87654a3b65c22a08f086920b7b4bc41ee7fc8378bd061957a5bc3f0593add6e
     restart: unless-stopped
     init: true
 
@@ -60,4 +60,4 @@ x-casaos:
   title:
     en_US: Disk Monitor
     de_DE: Disk Monitor
-  version: "0.32.105"
+  version: "0.32.106"
