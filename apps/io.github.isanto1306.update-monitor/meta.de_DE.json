@@ -1,8 +1,8 @@
 {
   "id": "io.github.isanto1306.update-monitor",
   "title": "Update Monitor",
-  "tagline": "Docker Update Überwachung, Richtlinien, Backups und Wiederherstellung für ZimaOS",
   "description": "Selbst gehostetes Docker Update Dashboard für ZimaOS mit Image und\nVersionsprüfung, Richtlinien pro App, gezielter Verifizierung,\nUpdate Installation, Backup und Wiederherstellung sowie Laufzeitinformationen.\n\nWenn Update Monitor sich selbst aktualisiert, erkennt eine geöffnete\nBrowser Seite die neue Backend Version und lädt sich automatisch neu.\n\n**Vor der Installation:** Über **Benutzerdefinierte Installation → Erweitert**\nalle Sicherheits Platzhalter vor dem ersten Start ändern. Einen eigenen\n`UPDATE_MONITOR_USERNAME` festlegen, ein `UPDATE_MONITOR_PASSWORD` mit\nmindestens 12 Zeichen wählen und einen eindeutigen\n`UPDATE_MONITOR_SESSION_SECRET` mit mindestens 32 Zeichen erzeugen. Die App\nnicht mit unveränderten `CHANGE_ME_...` Werten installieren.\n\n`UPDATE_MONITOR_GITHUB_TOKEN` ist optional und kann leer bleiben.\n",
+  "tagline": "Docker Update Überwachung, Richtlinien, Backups und Wiederherstellung für ZimaOS",
   "tips": {
     "before_install": "Vor dem ersten Start die benutzerdefinierte Installation → Erweitert verwenden. Benutzername ändern, ein Passwort mit mindestens 12 Zeichen setzen und ein eindeutiges Session Geheimnis mit mindestens 32 Zeichen erzeugen. Keine CHANGE_ME_... Platzhalter unverändert lassen."
   }
